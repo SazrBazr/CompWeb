@@ -53,6 +53,10 @@ body {
     max-width: 400px; /* Limit width on larger screens */
     transform: scale(0.9); /* Scale down on mobile */
     transform-origin: top;
+    aspect-ratio: 1 / 1.5; /* Maintain a form aspect ratio */
+    z-index: 10; /* Ensure it is above background shapes */
+    position: relative; /* Relative positioning */
+    overflow: hidden; /* Prevent overflow */
 }
 
 form {
@@ -64,12 +68,12 @@ form {
 h3 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 30px; /* Further increased font size */
+    font-size: 36px; /* Increased font size */
 }
 
 label {
     margin-top: 15px;
-    font-size: 22px; /* Further increased font size */
+    font-size: 26px; /* Increased font size */
 }
 
 input {
@@ -77,7 +81,8 @@ input {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 20px; /* Further increased font size */
+    font-size: 24px; /* Increased font size */
+    width: 100%; /* Ensure input fields use full width */
 }
 
 button {
@@ -88,7 +93,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 22px; /* Further increased font size */
+    font-size: 26px; /* Increased font size */
 }
 
 button:hover {
@@ -98,7 +103,7 @@ button:hover {
 p {
     text-align: center;
     margin-top: 15px;
-    font-size: 20px; /* Further increased font size */
+    font-size: 24px; /* Increased font size */
 }
 
 /* Responsive styles */
